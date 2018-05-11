@@ -7,15 +7,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TextField fx:id="txtNumero1" layoutX="46.0" layoutY="46.0" />
-      <TextField fx:id="txtNumero2" layoutX="46.0" layoutY="97.0" />
-      <TextField fx:id="txtResultado" layoutX="46.0" layoutY="155.0" />
-      <Label layoutX="46.0" layoutY="22.0" text="Numero1" />
-      <Label layoutX="46.0" layoutY="80.0" text="Numero2" />
-      <Label layoutX="46.0" layoutY="135.0" text="Resultado" />
-      <Button fx:id="btnSoma" layoutX="235.0" layoutY="97.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+        <Label fx:id="label" layoutX="181.0" layoutY="154.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="txtNumero1" layoutX="101.0" layoutY="80.0" />
+      <TextField fx:id="txtNumero2" layoutX="101.0" layoutY="131.0" />
+      <TextField fx:id="txtResultado" layoutX="101.0" layoutY="189.0" />
+      <Label layoutX="101.0" layoutY="56.0" text="Numero1" />
+      <Label layoutX="101.0" layoutY="114.0" text="Numero2" />
+      <Label layoutX="101.0" layoutY="169.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="290.0" layoutY="131.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+      <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="437.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="cadastro">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="aluno" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
